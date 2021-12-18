@@ -3,13 +3,13 @@ import { search } from './productApi';
 
 const initialState = {
     status: 'idle',
+    result: {},
   };
 
 export const searchProuct = createAsyncThunk(
   'product/search',
-  async () => {
-    const response = await search();
-    console.log(response);
+  async ({term, demo}) => {
+    const response = await search(term, demo);
     return response;
   }
 )
@@ -31,6 +31,7 @@ export const productSlice = createSlice({
         })
         .addCase(searchProuct.fulfilled, (state, action) => {
           state.status = 'idle';
+          state.result = action.payload;
         });
     },
 })
@@ -38,5 +39,6 @@ export const productSlice = createSlice({
 export const { purgedata } = productSlice.actions;
 
 export const selectStatus = (state) => state.product.status;
+export const selectResult = (state) => state.product.result;
 
 export default productSlice.reducer;

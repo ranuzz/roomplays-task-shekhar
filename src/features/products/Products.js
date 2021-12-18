@@ -9,7 +9,16 @@ export function Product() {
     const dispatch = useDispatch();
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(e.target[0].value);
+        dispatch(searchProuct({
+            term: e.target[0].value,
+            demo: false
+        }));
+    }
+    function handleClick() {
+        dispatch(searchProuct({
+            term: '*',
+            demo: true
+        }));
     }
     return (
  
@@ -32,8 +41,10 @@ export function Product() {
                 rows={1}
                 placeholder={'Search a product'}
                 /> <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<Button variant="outlined" type="submit">Search</Button>
+            &nbsp;&nbsp;&nbsp;&nbsp;<Button variant="outlined" type="submit">Search</Button><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<Button variant="outlined" onClick={handleClick}>Demo</Button>
         </Box>
+        
     </>
     );
 }

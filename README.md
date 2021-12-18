@@ -1,44 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Roomplays Task
 
-## Available Scripts
+https://roomplays-task-shekhar.pages.dev/
 
-In the project directory, you can run:
+## **Goal:**
 
-### `npm start`
+## Build a catalog search web application
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Problem:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Currently interior designers manually search for products across individual retailers. such as Wayfair, Home Depot, Amazon etc.  They would like a single tool where they can search for items across different retailers based on product name, price, in-stock availability. 
 
-### `npm test`
+*Options for integration are listed on the spreadsheet, however, to summarize*
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Users should be able to input product name (eg: "round coffee table"), price range and "in-stock" option - the output should include search matches from integrated retailers. 
+2. Retailers to search from: eg: [Wayfair.com](http://Wayfair.com) , [Target.com](http://Target.com) or [Amazon.com](http://Amazon.com) (pick any 2) 
+3. Show a result feed containing the list of the items - link to the product, image, product name, price. This should be infinite scrollable. 
+4. Clicking on the product takes you directly to the product page. 
 
-### `npm run build`
+Below are a few optional bonus use cases- if you'd like, feel free to implement any 1
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. (Bonus) Users can signup & bookmark their favs 
+2. (Bonus) Auto update feed on changes to the parent catalog 
+3. (Bonus) Add any feature that you feel will enhance the user experience 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## **Tech Stack:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Preferable to use any Javascript framework *****(although we are tech agnostic)*
 
-### `npm run eject`
+Feel free to use any publicly available APIs eg: RapidAPI (these do have limitations)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## **Expectation:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. We are looking for a basic functional application and the focus will be on the code structure, logic and coverage of edge cases. 
+2. Push the code to a public Github repository and share the link with us.
+3. Host it on the internet
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**[Note]** You may discover some of the publicly available APIs post challenges - you'll likely face similar challenges even in the real-world. We'd like to hear your recommendations on what limitations you find, and what work-arounds you recommend / any scope adjustments based on your understanding of the system's limitations

@@ -39,17 +39,6 @@ export default function BasicAppBar() {
                 Home
             </NavLink>
           </Button>
-          <Button color="inherit">
-            <NavLink 
-              to="/about"
-              activeStyle={{
-                fontWeight: "bold",
-                color: "white"
-              }}
-              >
-                About
-            </NavLink>
-          </Button>
         </Toolbar>
       </AppBar>
     </Box>
