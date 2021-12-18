@@ -2,6 +2,12 @@
 
 https://roomplays-task-shekhar.pages.dev/
 
+* Using RapidAPI (https://rapidapi.com/restyler/api/amazon23/). Free Account (50 Reqs)
+* Demo button to showcase the desired output using cached response
+* Search button to do actual API request and show result
+
+![demo](/asset/Roomplays_Task.png)
+
 ## **Goal:**
 
 ## Build a catalog search web application
